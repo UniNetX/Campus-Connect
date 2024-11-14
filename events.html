@@ -1,38 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Upcoming Events at Campus Connect">
-    <title>Events - Campus Connect</title>
+    <meta name="description" content="Events | Campus Connect">
+    <title>Events | Campus Connect</title>
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
+
 <body>
-    <!-- Navbar -->
+    <!-- Header Section (Logo and Navbar) -->
     <header>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Campus Connect Logo">
+            <h1 style="color:white;">Campus Connect</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="support.html">Support</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Events Section -->
-    <section class="events">
-        <h1>Upcoming Events</h1>
-        <ul>
-            <li><strong>STEM Networking Night</strong> - March 15, 2024</li>
-            <li><strong>Robotics Workshop</strong> - April 10, 2024</li>
-            <li><strong>Coding Challenge</strong> - May 20, 2024</li>
-        </ul>
-    </section>
+    <!-- Main Section -->
+    <main>
+        <section class="intro">
+            <h2>Join Our Upcoming Events</h2>
+            <p>We host a variety of events throughout the year. Be a part of our vibrant community and join us for some exciting events!</p>
+        </section>
 
-    <!-- Footer -->
+        <section id="event-list" class="event-list">
+            <h3>Upcoming Events</h3>
+            <div class="event-item">
+                <h4>Community Meetup</h4>
+                <p><strong>Date:</strong> December 5, 2024</p>
+                <p><strong>Location:</strong> Main Hall, City Center</p>
+                <a href="event-details.html" class="btn">Learn More</a>
+            </div>
+            <div class="event-item">
+                <h4>Webinar: Sustainability in 2024</h4>
+                <p><strong>Date:</strong> January 10, 2025</p>
+                <p><strong>Location:</strong> Online Event (Zoom)</p>
+                <a href="event-details.html" class="btn">Learn More</a>
+            </div>
+            <div class="event-item">
+                <h4>Charity Fundraiser</h4>
+                <p><strong>Date:</strong> February 15, 2025</p>
+                <p><strong>Location:</strong> Grand Ballroom, Hilton Hotel</p>
+                <a href="event-details.html" class="btn">Learn More</a>
+            </div>
+        </section>
+
+        <section id="past-events" class="past-events">
+            <h3>Past Events</h3>
+            <div class="event-item">
+                <h4>STEM Workshops 2024</h4>
+                <p><strong>Date:</strong> August 2024</p>
+            </div>
+            <div class="event-item">
+                <h4>Tech Talk: Innovations in AI</h4>
+                <p><strong>Date:</strong> July 2024</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Campus Connect | All Rights Reserved</p>
+        <p>&copy; 2024 Campus Connect. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
