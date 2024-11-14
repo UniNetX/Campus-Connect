@@ -5,14 +5,94 @@
     box-sizing: border-box;
 }
 
-/* Body and Global Settings */
+
+/* General Styles for Text */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
     margin: 0;
+    padding: 0;
 }
+
+/* Intro Section */
+.intro {
+    background-color: #1d3557; /* Navy Blue */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.7;
+}
+
+/* Discord Info Section */
+.discord-info {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 0 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.discord-info h3 {
+    font-size: 28px;
+    color: #1d3557; /* Navy Blue */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.discord-info p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.discord-info a {
+    color: #264653; /* Darker Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.discord-info a:hover {
+    color: #f4a261; /* Orange Hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .discord-info h3 {
+        font-size: 24px;
+    }
+
+    .discord-info p {
+        font-size: 16px;
+    }
+}
+
 
 h1, h2, h3, h4 {
     font-weight: 600;
@@ -47,8 +127,10 @@ header .logo {
 }
 
 header .logo img {
-    width: 40px;
+    width: 70px;
     margin-right: 15px;
+    height: 70px;
+    border-radius: 50%;
 }
 
 header h1 {
@@ -69,7 +151,7 @@ nav ul li a {
     color: #fff;
     font-size: 16px;
     font-weight: 500;
-    padding: 8px 15px;
+    padding: 15px 25px;
     transition: background-color 0.3s ease;
 }
 
@@ -87,7 +169,7 @@ main {
 
 /* Hero Section (Get Involved) */
 .get-involved {
-    background-color: #2a9d8f; /* Green */
+    background-color: #1d4475; /* Green */
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -103,7 +185,7 @@ main {
 
 .get-involved p {
     font-size: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 5%;
     line-height: 1.6;
 }
 
@@ -169,7 +251,6 @@ main {
 
 .position h4 {
     font-size: 24px;
-    margin-bottom: 15px;
 }
 
 .position ul {
@@ -426,7 +507,7 @@ footer p {
 
 .about-cta .btn {
     padding: 15px 30px;
-    background-color: #1d3557; /* Navy Blue */
+    background-color: #f4a261; /* Navy Blue */
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -436,7 +517,7 @@ footer p {
 }
 
 .about-cta .btn:hover {
-    background-color: #264653; /* Darker Navy Blue */
+    background-color: #e76f51; /* Darker Orange */
 }
 
 /* Responsive Design */
@@ -458,5 +539,81 @@ footer p {
 
     .skill-item {
         width: 90%;
+    }
+}
+
+.event-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Event Card Styling */
+.event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.event-card h3 {
+    font-size: 24px;
+    color: #1f2a44; /* Navy Blue */
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.event-card .btn {
+    background-color: #f29c11; /* Orange */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.event-card .btn:hover {
+    background-color: #d78c0e; /* Darker orange on hover */
+}
+
+.event-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .event-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
     }
 }
