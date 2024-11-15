@@ -11,43 +11,63 @@
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="assets/images/logo.png" alt="Campus Connect Logo"> <!-- Replace with your logo path -->
+            <img src="assets/images/logo.png" alt="Campus Connect Logo">
             <h1 style="color:white;">Campus Connect</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a href="support.html">Support</a></li> <!-- New Support link added -->
+                <li><a href="support.html">Support</a></li>
+                <!-- Dropdown Menu -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Subjects</a>
+                    <div class="dropdown-content">
+                        <a href="biology.html">Biology</a>
+                        <a href="math.html">Math</a>
+                        <a href="french.html">French</a>
+                        <a href="programming.html">Programming</a>
+                        <a href="webdev.html">Web Development</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <div class="about">
+        <section class="about-hero">
+            <h1 style="color:white;">Contact</h1>
+            <p>If you have any questions, feel free to reach out to us. We're here to help!</p>
+        </section>
+    </div>
+
     <!-- Contact Section -->
     <section class="contact-section">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out to us. We're here to help!</p>
-
         <div class="contact-form-wrapper">
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/campusconnectcharlotte@gmail.com" method="POST">
                 <div class="form-group">
                     <label for="name">Your Name</label>
-                    <input type="text" id="name" placeholder="Enter your name">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Your Email</label>
-                    <input type="email" id="email" placeholder="Enter your email">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Your Message</label>
-                    <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
                 </div>
+                <!-- Hidden input for redirect -->
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> <!-- Change this to your Thank You page -->
+                <!-- Hidden input for security -->
+                <input type="hidden" name="_captcha" value="false"> <!-- Disables the CAPTCHA -->
                 <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
+    
 
     <!-- Footer Section -->
     <footer>
